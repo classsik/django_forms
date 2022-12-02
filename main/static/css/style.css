@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #02133C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gears_1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.gears_2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.form {
+    width: 585px;
+    height: 640px;
+    background: #fff;
+    padding: 76px 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #02133C;
+    margin-bottom: 48px;
+}
+
+.form__row {
+    display: flex;
+    gap: 22px;
+    width: 100%;
+}
+
+.form__input {
+    width: 100%;
+    height: 48px;
+    background: #F5F5F5;
+    border: none;
+    outline: none;
+    margin-bottom: 22px;
+    padding: 0 23px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.form__input::placeholder {
+    color: #959595;
+}
+
+.form__textarea {
+    width: 100%;
+    height: 180px;
+    border: none;
+    resize: none;
+    padding: 17px 23px;
+    background: #f5f5f5;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.form__textarea::placeholder {
+    color: #959595;
+}
+
+.form__button {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 10px;
+    border: none;
+    background: #C40B0B;
+    gap: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form__button p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 1;
+    position: relative;
+}
+
+.form__button svg {
+    position: relative;
+    z-index: 1;
+}
+
+.form__button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 48px;
+    z-index: 0;
+    margin-top: -48px;
+    border-bottom: 48px solid #E30B0B;
+    border-left: 20px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 0 solid transparent;
+}
+
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 110px;
+}
+
+.main__right-title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.main__right-count {
+    font-weight: 900;
+    line-height: 56px;
+    font-size: 96px;
+    color: #C40B0B;
+    margin-bottom: 46px;
+}
+
+.main__right-text {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}

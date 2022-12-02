@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__left">
+            <form class="form" action="/appointment" method="get">
+                <h1 class="form__title">Make an appointment</h1>
+                <div class="form__row">
+                    <input type="text" placeholder="Name" class="form__input" name="name">
+                    <input type="email" placeholder="Email" class="form__input" name="email">
+                </div>
+                <div class="form__row">
+                    <input type="tel" placeholder="Phone Number" class="form__input" name="phone">
+                    <input type="text" placeholder="Select Service" class="form__input" name="service">
+                </div>
+                <textarea class="form__textarea" placeholder="Tell us about the car needing service(s)" name="text"></textarea>
+                <button type="submit" class="form__button">
+                    <p>Make an Appointment</p>
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 10.9334L5.06 9.99343L8.78 6.26676L0.666667 6.26676L0.666667 4.93343L8.78 4.93343L5.06 1.20676L6 0.26676L11.3333 5.60009L6 10.9334Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <div class="main__right">
+            <h2 class="main__right-title">Maxime placeat facere <br> possimus omnis</h2>
+            <p class="main__right-count">17k</p>
+            <p class="main__right-text">customers served (and counting)</p>
+        </div>
+    </main>
+    <img src="{% static 'img/gears_1.png' %}" alt="Gears illustration" class="gears_1">
+    <img src="{% static 'img/gears_2.png' %}" alt="Gears illustration" class="gears_2">
+</body>
+
+</html>
